@@ -1,0 +1,21 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Guncelleme";
+}
+
+<h1>Guncelleme</h1>
+
+<form method="post">
+    <input type="hidden" name="CategoryId" id="CategoryId" value="@Model.CategoryId"/>
+    <p>
+        <label>Category Adı:</label>
+        <input asp-for="CategoryName" />
+    </p>
+
+    <p>
+        <label>Description:</label>
+        <input asp-for="Description" />
+    </p>
+
+    <input type="submit" value="Guncelleme" />
+</form>

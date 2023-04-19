@@ -1,0 +1,20 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Ekleme";
+}
+
+<h1>Ekleme</h1>
+
+<form method="post">
+    <p>
+        <label>Category Adı:</label>
+        <input  asp-for="CategoryName"/>
+    </p>
+
+    <p>
+        <label>Description:</label>
+        <input asp-for="Description" />
+    </p>
+
+    <input type="submit" value="Ekleme" />
+</form>
